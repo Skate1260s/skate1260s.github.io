@@ -1,148 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skate 3 Customs | Midnight Archive</title>
-    <style>
-        /* Midnight Space Aesthetic */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background: radial-gradient(circle at top, #1a2a6c, #b21f1f, #020205); /* Deep space gradient */
-            background-attachment: fixed;
-            color: #e2e8f0;
-            line-height: 1.6;
-        }
-
-        header {
-            text-align: center;
-            padding: 4rem 1rem;
-            background: rgba(0, 0, 0, 0.3);
-        }
-
-        header h1 {
-            font-size: 3rem;
-            margin: 0;
-            letter-spacing: 4px;
-            color: #93c5fd; /* Soft blue glow */
-            text-shadow: 0 0 15px rgba(147, 197, 253, 0.6);
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        section {
-            margin-bottom: 4rem;
-            background: rgba(255, 255, 255, 0.05);
-            padding: 2rem;
-            border-radius: 15px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        h2 {
-            border-bottom: 1px solid #5a7d9a;
-            padding-bottom: 10px;
-            color: #60a5fa;
-        }
-
-        .download-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .item-card {
-            background: rgba(0, 0, 0, 0.4);
-            padding: 1.5rem;
-            border-radius: 10px;
-            transition: transform 0.2s ease;
-        }
-
-        .item-card:hover {
-            transform: translateY(-5px);
-            background: rgba(255, 255, 255, 0.1);
-        }
-
-        .btn-group {
-            display: flex;
-            gap: 10px;
-            margin-top: 15px;
-        }
-
-        .btn {
-            flex: 1;
-            text-align: center;
-            padding: 8px;
-            background: #2563eb;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 0.8rem;
-            font-weight: bold;
-        }
-
-        .btn:hover {
-            background: #3b82f6;
-        }
-
-        .rx2-btn { background: #059669; } /* Different color for textures */
-        .rx2-btn:hover { background: #10b981; }
-
-    </style>
-</head>
-<body>
-
+<div class="container">
     <header>
-        <h1>MIDNIGHT ARCHIVE</h1>
-        <p>Custom Skate 3 Textures & Skaters</p>
+        <h1>SKATER ARCHIVES</h1>
+        <p>Skate 3 Customs</p>
     </header>
 
-    <div class="container">
-        
-        <section>
-            <h2>Custom RX2 Low Res Textures</h2>
-            <div class="download-grid">
-                <div class="item-card">
-                    <h3>Griptape Pack v1</h3>
-                    <p>Low res custom grip textures.</p>
-                    <a href="#" class="btn rx2-btn">Download .RX2</a>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2>Custom Freeplay Skaters</h2>
-            <div class="download-grid">
-                <div class="item-card">
-                    <h3>Example Skater A</h3>
-                    <div class="btn-group">
-                        <a href="#" class="btn">.RECIPE</a>
-                        <a href="#" class="btn">SKATER.P</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2>Pre-Made Low Res Skaters</h2>
-            <div class="download-grid">
-                <div class="item-card">
-                    <h3>Example Skater B</h3>
-                    <div class="btn-group">
-                        <a href="#" class="btn">.RECIPE</a>
-                        <a href="#" class="btn">SKATER.P</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+    <div class="menu-grid">
+        <a href="freeplay.html" class="menu-card">
+            <h2>Freeplay Skaters</h2>
+            <p>.recipe & skater.p files</p>
+        </a>
+        <a href="lowres.html" class="menu-card">
+            <h2>Low-Res Skaters</h2>
+            <p>Pre-made low-res builds</p>
+        </a>
+        <a href="rx2.html" class="menu-card">
+            <h2>RX2 Textures</h2>
+            <p>Boards, Hats, & Skins</p>
+        </a>
     </div>
-
-</body>
-</html>
+</div>
