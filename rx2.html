@@ -1,0 +1,25 @@
+<div class="container">
+    <a href="index.html" class="back-btn">← Back to Menu</a>
+    <h1>RX2 Textures</h1>
+
+    <section>
+        <h3>Boards</h3>
+        <div class="texture-item">
+            <img src="board-preview.jpg" alt="Board Preview" style="width:100%; border-radius:10px;">
+            <div class="copy-box">
+                <input type="text" value="https://link-to-your-rx2-file.com" id="link1" readonly>
+                <button onclick="copyLink('link1')">Copy Link</button>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script>
+function copyLink(id) {
+  var copyText = document.getElementById(id);
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile
+  navigator.clipboard.writeText(copyText.value);
+  alert("Link copied!");
+}
+</script>
